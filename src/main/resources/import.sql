@@ -1,0 +1,2 @@
+INSERT INTO EMPLEADO (id_Empleado,nombre,apellido,cargo,estado) values (1,'Ruben','Suaza','Ingeniero',true)
+INSERT INTO EMPLEADO (id_Empleado,nombre,apellido,cargo,estado) values (2,'Diego','Suaza','Ingeniero',true)
