@@ -25,7 +25,7 @@ public class EmpleadoServiceImpl implements EmpleadoService {
     }
 
     @Override
-    public EmpleadoEntity findById(int idEmpleado) {
-        return empleadoRepository.findById(idEmpleado).orElse(null);
+    public EmpleadoCommand findById(int idEmpleado) {
+        return empleadoFabrica.empleadoEntityToCommand(empleadoRepository.findById(idEmpleado).orElse(null));
     }
 }

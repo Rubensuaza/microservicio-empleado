@@ -17,6 +17,11 @@ public class EmpleadoFabrica {
         return listaEmpleadoCommand;
     }
 
+    public  EmpleadoCommand empleadoEntityToCommand(EmpleadoEntity empleadoEntity) {
+        EmpleadoCommand empleadoCommand = entityToCommand(empleadoEntity);
+        return empleadoCommand;
+    }
+
     private EmpleadoCommand entityToCommand(EmpleadoEntity empleadoEntity){
         EmpleadoCommand empleadoCommand=new EmpleadoCommand();
         empleadoCommand.setIdEmpleado(empleadoEntity.getIdEmpleado());

@@ -9,5 +9,5 @@ public interface EmpleadoService {
 
     List<EmpleadoCommand> findAll();
 
-    EmpleadoEntity findById(int idEmpleado);
+    EmpleadoCommand findById(int idEmpleado);
 }
